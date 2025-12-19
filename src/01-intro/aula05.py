@@ -44,7 +44,7 @@ print(frutas[2])
 # print(frutas[3])  index error
 
 frutas[0] = 'banana nanica'
-frutas.appens('abacaxi')
+frutas.append('abacaxi')
 print(frutas)
 print(len(frutas))
 
@@ -60,7 +60,7 @@ print(codigos[0])
 print(len(codigos))
 
 # Conjuntos
-resultado_sorteio = [10, 4, 3, 55, 9]
+resultado_sorteio = {10, 4, 3, 55, 9}
 print(resultado_sorteio)
 
 resultado_sorteio.add(23)
