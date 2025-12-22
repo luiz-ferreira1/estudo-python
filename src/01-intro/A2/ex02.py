@@ -1,16 +1,25 @@
-# ex02.py
+entrada = input('Digite as notas separadas por vírgula: ')
 
-entrada = input("Digite as notas separadas por vírgula: ")
+notas = []
 
-notas = [float(n) for n in entrada.split(',')]
+numeros = entrada.split(',')
 
-media = sum(notas) / len(notas)
+for numero in numeros:
+    n = float(numero)
+    notas.append(n)
 
-print(f"Média calculada: {media:.2f}")
+soma = 0
+
+for nota in notas:
+    soma += nota
+
+media = soma / len(notas)
+
+print(media)
 
 if media > 6.0:
-    print("Situação: Aprovado")
+    print('Aprovado')
 elif 4.0 <= media <= 6.0:
-    print("Situação: Recuperação")
+    print('Recuperação')
 else:
-    print("Situação: Reprovado")
+    print('Reprovado')
