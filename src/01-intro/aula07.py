@@ -13,7 +13,7 @@ print('joao@email.com',
 
 #Entrada
 #input
-nome = input('Dif=gite seu nome: ')
+nome = input('Digite seu nome: ')
 idade = int(input('Digite sua idade: '))
 if idade >= 18:
     print(f'{nome}, você é maior de idade')
