@@ -32,3 +32,27 @@ print(calcular_area(retangulo1))
 print(calcular_perimetro(retangulo1))
 print(calcular_area(retangulo2))
 print(calcular_perimetro(retangulo2))
+
+# Classe representa um conceito
+# Classe representa um retangulo
+# Classe possui atributos base e altura
+# Classe possui métodos (função dentro da classe)
+class Retangulo:
+    def __init__(self, base, altura):
+        self.base = base
+        self.altura = altura
+    def calcular_area(self):
+        return self.base * self.altura
+    def calcular_perimetro(self):
+        return 2 * (self.base + self.altura)
+
+# Instanciando objetos do tipo Retangulo
+# Chamando o método construtor
+retangulo1 = Retangulo(10.0, 5.0)
+retangulo2 = Retangulo(6.0, 3.0)
+
+print(type(retangulo1), retangulo1)
+print(type(retangulo2), retangulo2)
+
+print(retangulo1.base, retangulo1.altura, retangulo1.calcular_area(), retangulo1.calcular_perimetro())
+print(retangulo2.base, retangulo2.altura, retangulo2.calcular_area(), retangulo2.calcular_perimetro())
